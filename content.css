@@ -1,0 +1,33 @@
+.risk-dot {
+    display: inline-block;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.risk-dot.low-risk {
+    background-color: green;
+}
+
+.body:not(.dark-mode) .risk-dot.medium-risk {
+    background-color: #e9e900;
+}
+
+.body.dark-mode .risk-dot.medium-risk {
+    background-color: yellow;
+}
+
+.risk-dot.high-risk {
+    background-color: red;
+}
+
+#risk-button {
+    color: currentColor;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid aliceblue !important;
+    margin-left: 4px;
+    border-radius: 4px;
+}
